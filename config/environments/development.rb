@@ -38,6 +38,9 @@ Rails.application.configure do
 
   config.action_mailer.perform_caching = false
 
+  host = 'us-east-2.console.aws.amazon.com/cloud9/ide/60efe00562a74d98bd0224a345adb9b6'     # Cloud IDE
+  config.action_mailer.default_url_options = { host: host, protocol: 'https' }
+
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
